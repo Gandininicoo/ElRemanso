@@ -98,6 +98,7 @@ html{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background-color: #352504;
     background-image: url(../img/ruta-norteña.jpg);
     background-size: cover;
     background-position: bottom;
@@ -148,6 +149,7 @@ html{
     flex-direction: column;
     width: 100%;
     min-height: 90vh;
+    background-color: #352504;
     background-image: url(../img/rio-inicio.jpg);
     background-size: cover;
     background-position: bottom;
@@ -349,7 +351,7 @@ html{
         align-self: center;
         width: 90%;
         display: flex;
-        height: 200px;
+        height: 180px;
         background-color: #917c67;
         border-radius: 30px;
         @media all and (min-width:700px){
