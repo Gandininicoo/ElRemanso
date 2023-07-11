@@ -99,10 +99,13 @@ html{
     width: 100vw;
     height: 100vh;
     background-color: #352504;
-    background-image: url(../img/ruta-norteña.jpg);
+    background-image: url(../img/ruta-norteña-500px.jpg);
     background-size: cover;
     background-position: bottom;
     transition: all ease-in-out 1.4s;
+    @media all and (min-width: 600px){
+        background-image: url(../img/ruta-norteña.jpg);
+    }
     img {
         width: 60%;
         max-width: 300px;
