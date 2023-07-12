@@ -13,9 +13,15 @@ const Termo = document.getElementById("Termo");
 const Cuchillo = document.getElementById("Cuchillo");
 const Tabla = document.getElementById("Tabla")
 const imgGallery = document.getElementById("img-gallery")
-
+const scrollLeftButton = document.getElementById("scrollLeft")
+const scrollRightButton = document.getElementById("scrollRight")
+const galleryEmpresas = document.getElementById("img-container")
+const imgwidth = document.getElementById("img-container-firstImg")
 const infoProducto = document.getElementById("infoProducto");
 const tituloProducto = document.getElementById("tituloProducto");
+
+scrollRightButton.addEventListener("click", (event) => {galleryEmpresas.scrollLeft += imgwidth.width})
+scrollLeftButton.addEventListener("click", (event) => {galleryEmpresas.scrollLeft -= imgwidth.width})
 
 hamburguerMenuBtn.addEventListener("click", () => {
   hamburguerMenu.classList.contains("hamburgerMenuDeployed")
