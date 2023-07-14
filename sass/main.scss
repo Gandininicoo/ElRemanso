@@ -162,12 +162,12 @@ html{
         font-size: 2rem;
         font-weight: 800;
         text-align: center;
-        color: #0f0f0f;
-        text-shadow: -1.3px 1.3px 0 #fafafa,
-                    1.3px 1.3px 0 #fafafa,
-                    1.3px -1.3px 0 #fafafa,
-                    -1.3px -1.3px 0 #fafafa,
-                    2.4px 2.5px 0 #0f0f0f, 3px 3.3px 0 #fafafa;
+        color: #fafafa;
+        text-shadow: -1.3px 1.3px 0 #0f0f0f,
+                    1.3px 1.3px 0 #0f0f0f,
+                    1.3px -1.3px 0 #0f0f0f,
+                    -1.3px -1.3px 0 #0f0f0f,
+                    2.4px 2.5px 0 #0f0f0f, 3px 3.3px 0 #0f0f0f;
         @media all and (min-width:1090px){
             font-size: 3rem;
         }
@@ -208,7 +208,7 @@ html{
 }
 .tiendaVirtual{
     width: 100%;
-    background-color: #917c67;
+    background-color: #646044;
     padding-top: 30px;
     justify-content: center;
     display: flex;
@@ -578,12 +578,69 @@ html{
                 display: none;
             }
             img{
-                width: 80%;
                 object-fit: cover;
-                height: auto;
+                height: 100%;
                 padding: 0 0.1%;
+                color: #6e6154;
             }
         }
         
     }
+}
+
+footer{
+    overflow: hidden;
+    background-color: #0f0f0f;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    @media all and (min-width:700px){
+        height: 150px;
+    }
+    @media all and (min-width:1080px){
+        height: 220px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        width: 40%;
+        align-items: flex-end;
+        justify-content: center;
+        @media all and (min-width:700px){
+            justify-content: space-evenly;
+        }
+        .linkimg{
+            align-self: flex-start;
+            width: 50%;
+            @media all and (min-width:1080px){
+                width: 30%;
+            }
+            img {
+                width: 100%;
+            }
+            h1 {
+                margin-left: 10px;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #fafafa;
+                text-shadow: 1.4px 2.5px 0 #0f0f0f, 2px 3.3px 0 #fafafa;
+                @media all and (min-width: 700px){
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        a{
+            color: #fafafa;
+            text-decoration: none;
+            font-size: .7rem;
+            @media all and (min-width:700px){
+                font-size: .9rem;
+            }
+        }
+    }
+}
+#Mayorista{
+    min-height: 100vh;
+    background-color: #292113;
 }
